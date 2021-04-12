@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newLogLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DA9C5E">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="150sp"
+            android:layout_marginRight="150sp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40sp"
+                android:layout_marginBottom="20sp"
+                android:gravity="center|top">
+
+                <EditText
+                    android:id="@+id/nameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75sp"
+                    android:layout_weight="0"
+                    android:ems="10"
+                    android:gravity="center|fill_horizontal"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="15sp"
+                    android:text="(ENTER NAME)"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+                <RadioGroup
+                    android:id="@+id/exerciseGroup"
+                    android:layout_width="500sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:layout_weight="0"
+                    android:gravity="center|center_horizontal">
+
+                    <TextView
+                        android:id="@+id/selectExerciseText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:gravity="center"
+                        android:text="Select Exercise: "
+                        android:textColor="#000000"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/benchPressRadio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:gravity="center"
+                        android:text="Bench Press"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/squatRadio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:gravity="center"
+                        android:text="Squats"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/deadliftRadio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:gravity="center"
+                        android:text="Deadlift"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                </RadioGroup>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
